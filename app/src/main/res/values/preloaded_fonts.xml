@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/maven_pro</item>
+        <item>@font/maven_pro_bold</item>
+        <item>@font/noto_sans</item>
+        <item>@font/noto_sans_bold</item>
+        <item>@font/open_sans_bold</item>
+        <item>@font/open_sans_semibold</item>
+        <item>@font/playfair_display</item>
+        <item>@font/playfair_display_black</item>
+        <item>@font/playfair_display_bold</item>
+        <item>@font/playfair_display_sc_bold</item>
+        <item>@font/quicksand_bold</item>
+        <item>@font/quicksand_medium</item>
+        <item>@font/reem_kufi</item>
+        <item>@font/varela_round</item>
+    </array>
+</resources>

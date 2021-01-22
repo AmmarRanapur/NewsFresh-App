@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">News Fresh</string>
+    <string name="try_again">NO INTERNET CONNECTION , Restart and try again.</string>
+</resources>

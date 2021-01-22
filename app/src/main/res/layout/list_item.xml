@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="7dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/playfair_display"
+            android:maxLines="3"
+            android:paddingLeft="11dp"
+            android:paddingTop="6dp"
+            android:paddingRight="11dp"
+            android:paddingBottom="4dp"
+            android:textColor="#212121"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/image_view"
+            app:layout_constraintStart_toStartOf="@+id/image_view"
+            app:layout_constraintTop_toBottomOf="@+id/image_view"
+            tools:text="UK Corona virus live updates" />
+
+        <TextView
+            android:id="@+id/section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/reem_kufi"
+            android:paddingStart="11dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/title"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            tools:text="section-name" />
+
+        <ImageView
+            android:id="@+id/time_img"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="2dp"
+            android:src="@mipmap/clock_image_foreground"
+            app:layout_constraintBottom_toBottomOf="@+id/time"
+            app:layout_constraintStart_toEndOf="@id/section"
+            app:layout_constraintTop_toTopOf="@+id/time"
+            app:layout_constraintVertical_bias="0.25" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/reem_kufi"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/section"
+            app:layout_constraintStart_toEndOf="@id/section"
+            tools:text="3 days ago" />
+
+
+        <Button
+            android:id="@+id/share_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            android:layout_width="34dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="9dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/ic_icons8_share1"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
